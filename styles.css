@@ -1,0 +1,167 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ffcc;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.donation-options {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.donation-options h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00ffcc;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+}
+
+.crypto-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.crypto-icon {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  position: relative;
+}
+
+.crypto-icon:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 255, 204, 0.2);
+}
+
+.crypto-icon i, .crypto-logo {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #00ffcc;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+  transition: color 0.3s ease;
+}
+
+.crypto-icon:hover i, .crypto-icon:hover .crypto-logo {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.5));
+}
+
+.crypto-icon p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+.wallet-address {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin: 10px 0;
+  word-break: break-all;
+}
+
+.copy-button {
+  background: #00ffcc;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+}
+
+.copy-button:hover {
+  background: #00ccaa;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.4);
+}
+
+.notification {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00ffcc;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeInOut 2.5s ease-in-out;
+}
+
+.notification i {
+  margin-left: 5px;
+  color: #121212;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+footer {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .crypto-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crypto-icon {
+    width: 80%;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate us ♡</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="icon.jpg" type="image/jpg">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Support Our Project</h1>
+      <p>Your donation gives us motivation to continue our Project and all donations are VERY VERY appreciated ᡣ • . • 𐭩 ♡</p>
+    </div>
+  </header>
+
+  <section class="donation-options">
+    <div class="container">
+      <h2>Donate Using Crypto</h2>
+      <div class="crypto-icons">
+        <div class="crypto-icon" data-crypto="bitcoin">
+          <i class="fab fa-bitcoin"></i>
+          <p>Bitcoin</p>
+          <span class="wallet-address">bc1q26c78yj60stne4fw0allksdsvxxnv7dnvh32nv</span>
+          <div class="notification" id="notification-btc">Successfully copied to clipboard! <i class="fas fa-check"></i></div>
+          <button class="copy-button" onclick="copyAddress('bc1q26c78yj60stne4fw0allksdsvxxnv7dnvh32nv', 'notification-btc')">Copy Address</button>
+        </div>
+
+        <div class="crypto-icon" data-crypto="ethereum">
+          <i class="fab fa-ethereum"></i>
+          <p>Ethereum</p>
+          <span class="wallet-address">0xe69719B096b44341d5bE5e7b218474d4616ab331</span>
+          <div class="notification" id="notification-eth">Successfully copied to clipboard! <i class="fas fa-check"></i></div>
+          <button class="copy-button" onclick="copyAddress('0xe69719B096b44341d5bE5e7b218474d4616ab331', 'notification-eth')">Copy Address</button>
+        </div>
+
+        <div class="crypto-icon" data-crypto="litecoin">
+          <i class="fas fa-coins"></i> <!-- Generic cryptocurrency icon -->
+          <p>Litecoin</p>
+          <span class="wallet-address">LeDwnDrxEe9J6eq5gec3bL8tdkUzzadQvo</span>
+          <div class="notification" id="notification-ltc">Successfully copied to clipboard! <i class="fas fa-check"></i></div>
+          <button class="copy-button" onclick="copyAddress('LeDwnDrxEe9J6eq5gec3bL8tdkUzzadQvo', 'notification-ltc')">Copy Address</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
